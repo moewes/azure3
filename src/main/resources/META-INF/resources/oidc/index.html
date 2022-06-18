@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script src="keycloak.min.js"></script>
+    <script>
+        function initKeycloak() {
+            var keycloak = new Keycloak({
+    url: 'http://keycloak-server/auth',
+    realm: 'myrealm',
+    clientId: 'myapp'
+});
+            keycloak.init({ flow: 'implicit', checkLoginIframe: false }).then(function(authenticated) {
+                alert(authenticated ? 'authenticated' : 'not authenticated');
+            }).catch(function() {
+                alert('failed to initialize');
+            });
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body onload="initKeycloak()">
+<!-- your page content goes here -->
+<p>Hallo Welt</p>
+</body>
+</html>
