@@ -22,7 +22,7 @@
         <resources-plugin.version>3.1.0</resources-plugin.version>
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
         <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
-        <lombok.version>1.18.12</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
 
         <azure.functions.maven.plugin.version>1.14.0
         </azure.functions.maven.plugin.version>
@@ -84,6 +84,7 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>${org.mapstruct.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
