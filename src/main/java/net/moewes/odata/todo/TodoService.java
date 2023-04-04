@@ -12,10 +12,10 @@ import net.moewes.Dao;
 import net.moewes.app.todo.Todo;
 import net.moewes.quarkus.odata.EntityCollectionProvider;
 import net.moewes.quarkus.odata.EntityProvider;
-import net.moewes.quarkus.odata.annotations.ODataService;
+import net.moewes.quarkus.odata.annotations.ODataEntitySet;
 import org.apache.olingo.server.api.ODataApplicationException;
 
-@ODataService(value = "Todos", entityType = "Todo")
+@ODataEntitySet(value = "Todos", entityType = "Todo")
 public class TodoService implements EntityProvider<TodoOdataEntity>, EntityCollectionProvider<TodoOdataEntity> {
 
     @Inject
