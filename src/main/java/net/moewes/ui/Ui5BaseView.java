@@ -1,7 +1,7 @@
 package net.moewes.ui;
 
-import javax.inject.Inject;
 
+import jakarta.inject.Inject;
 import net.moewes.cloudui.UiComponent;
 import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.quarkus.runtime.CloudUi;

@@ -4,12 +4,11 @@ import java.net.URISyntaxException;
 import java.security.Principal;
 import java.util.UUID;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-
 import com.microsoft.azure.storage.StorageException;
 import io.quarkus.oidc.IdToken;
 import io.quarkus.security.identity.SecurityIdentity;
+import jakarta.annotation.PostConstruct;
+import jakarta.inject.Inject;
 import net.moewes.Dao;
 import net.moewes.cloudui.UiBinder;
 import net.moewes.cloudui.UiComponent;

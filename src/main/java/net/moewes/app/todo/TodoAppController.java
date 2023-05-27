@@ -1,7 +1,8 @@
 package net.moewes.app.todo;
 
-import javax.enterprise.context.RequestScoped;
 
+
+import jakarta.enterprise.context.RequestScoped;
 import lombok.Getter;
 import lombok.Setter;
 

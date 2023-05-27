@@ -1,8 +1,8 @@
 package net.moewes.ui;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.inject.Inject;
 import lombok.SneakyThrows;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.html.Div;

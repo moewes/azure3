@@ -2,10 +2,11 @@ package net.moewes.app.todo;
 
 import java.net.URISyntaxException;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
+
 
 import com.microsoft.azure.storage.StorageException;
+import jakarta.annotation.PostConstruct;
+import jakarta.inject.Inject;
 import lombok.SneakyThrows;
 import net.moewes.Dao;
 import net.moewes.cloudui.annotations.CloudUiView;

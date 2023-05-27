@@ -1,8 +1,8 @@
 package net.moewes;
 
-import javax.enterprise.context.RequestScoped;
-import javax.enterprise.inject.Produces;
 
+
+import jakarta.enterprise.context.RequestScoped;
 import net.moewes.cloudui.quarkus.runtime.identity.Identity;
 
 
