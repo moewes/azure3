@@ -28,7 +28,7 @@
         <functionAppName>${portal.azure.functionAppName}</functionAppName>
         <functionAppRegion>${portal.azure.functionAppRegion}</functionAppRegion>
         <functionResourceGroup>${portal.azure.functionResourceGroup}</functionResourceGroup>
-        <function>quarkus</function>
+        <function>QuarkusHttp</function>
         <stagingDirectory>
             ${project.build.directory}/azure-functions/${functionAppName}
         </stagingDirectory>

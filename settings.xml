@@ -25,5 +25,18 @@
       <password>${env.PASSWORD}</password>
     </server>
   </servers>
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
 
+  <profiles>
+    <profile>
+      <id>github</id>
+      <properties>
+        <portal.azure.functionAppName>xxx</portal.azure.functionAppName>
+        <portal.azure.functionAppRegion>germanywestcentral</portal.azure.functionAppRegion>
+        <portal.azure.functionResourceGroup>yyy</portal.azure.functionResourceGroup>
+      </properties>
+    </profile>
+  </profiles>
 </settings>
