@@ -91,7 +91,7 @@
         <dependency>
             <groupId>net.moewes</groupId>
             <artifactId>cloud-ui-quarkus-extension</artifactId>
-            <version>0.4.0</version>
+            <version>0.4.3</version>
         </dependency>
         <dependency>
             <groupId>net.moewes</groupId>
