@@ -5,7 +5,7 @@ import java.security.Principal;
 import java.util.UUID;
 
 import com.microsoft.azure.storage.StorageException;
-import io.quarkus.oidc.IdToken;
+//import io.quarkus.oidc.IdToken;
 import io.quarkus.security.identity.SecurityIdentity;
 import jakarta.annotation.PostConstruct;
 import jakarta.inject.Inject;
@@ -21,7 +21,7 @@ import net.moewes.cloudui.ui5.Ui5Input;
 import net.moewes.cloudui.ui5.Ui5Label;
 import net.moewes.ui.Ui5BaseView;
 import net.moewes.ui.util.FormLayout;
-import org.eclipse.microprofile.jwt.JsonWebToken;
+//import org.eclipse.microprofile.jwt.JsonWebToken;
 
 
 @CloudUiView("/todos/edit")
@@ -33,11 +33,11 @@ public class TodoEditView extends Ui5BaseView implements AfterDataBindingObserve
     @Inject
     CloudUi ui;
 
-   @Inject
-   @IdToken
-   JsonWebToken idToken;
+   //@Inject
+   //@IdToken
+   //JsonWebToken idToken;
 
-    @Inject
+    //@Inject
     SecurityIdentity identity;
 
     @Inject
@@ -116,13 +116,13 @@ public class TodoEditView extends Ui5BaseView implements AfterDataBindingObserve
         Ui5Input userField = new Ui5Input();
         userField.setReadOnly(true);
 
-        Principal principal = identity.getPrincipal(); // FIXME
+        //Principal principal = identity.getPrincipal(); // FIXME
 
-        if (idToken != null) {
-            userField.setValue(idToken.getSubject());
-        } else {
+       // if (idToken != null) {
+         //   userField.setValue(idToken.getSubject());
+        //} else {
             userField.setValue("no token");
-        }
+        //}
 
         form.addFormItem(userLabel, userField);
 
